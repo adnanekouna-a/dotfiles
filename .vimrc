@@ -1,17 +1,17 @@
-#?	            _                            _     
-#?	           | |                          ( )    
-#?	  __ _   __| | _ __    __ _  _ __    ___|/ ___ 
-#?	 / _` | / _` || '_ \  / _` || '_ \  / _ \ / __|
-#?	| (_| || (_| || | | || (_| || | | ||  __/ \__ \
-#?	 \__,_| \__,_||_| |_| \__,_||_| |_| \___| |___/
-#?	     _         _     __  _  _            
-#?	    | |       | |   / _|(_)| |           
-#?	  __| |  ___  | |_ | |_  _ | |  ___  ___ 
-#?	 / _` | / _ \ | __||  _|| || | / _ \/ __|
-#?	| (_| || (_) || |_ | |  | || ||  __/\__ \
-#?	 \__,_| \___/  \__||_|  |_||_| \___||___/
-#?
-#?  Last Updated : 07/07/2021
+"	            _                            _     
+"	           | |                          ( )    
+"	  __ _   __| | _ __    __ _  _ __    ___|/ ___ 
+"	 / _` | / _` || '_ \  / _` || '_ \  / _ \ / __|
+"	| (_| || (_| || | | || (_| || | | ||  __/ \__ \
+"	 \__,_| \__,_||_| |_| \__,_||_| |_| \___| |___/
+"	     _         _     __  _  _            
+"	    | |       | |   / _|(_)| |           
+"	  __| |  ___  | |_ | |_  _ | |  ___  ___ 
+"	 / _` | / _ \ | __||  _|| || | / _ \/ __|
+"	| (_| || (_) || |_ | |  | || ||  __/\__ \
+"	 \__,_| \___/  \__||_|  |_||_| \___||___/
+"
+"  Last Updated : 07/07/2021
 
 "Basic Settings
 syntax on
@@ -56,20 +56,16 @@ au BufNewFile,BufRead *.py
 "Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }					"Color Scheme #Dracula
-Plug 'arcticicestudio/nord-vim'							"Color Scheme #Nord
-Plug 'connorholyday/vim-snazzy'							"Color Scheme #Snazzy
 Plug 'itchyny/lightline.vim'							"Lightline
 Plug 'davidhalter/jedi-vim'								"Auto-Complete
 Plug 'ap/vim-css-color'									"CSS colors display
 Plug 'vim-syntastic/syntastic'							"Syntax highlighting
 Plug 'nvie/vim-flake8'									"PEP8 checking
 Plug 'preservim/nerdtree'								"File tree
-Plug 'kien/ctrlp.vim'									"Super search
 Plug 'tpope/vim-fugitive'								"Git integration
-Plug 'Yggdroot/indentLine'								"Indentation lines
-Plug 'tpope/vim-commentary'								"Easy commenting
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
 Plug 'vim-python/python-syntax'							"Python Syntax Highlighting
+Plug 'plasticboy/vim-markdown'							"Markdown Syntax Highlighting
 call plug#end()
 
 " Fixing the colorscheme
@@ -86,3 +82,4 @@ let g:indentLine_setColors = 0
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors	= 0
 let g:python_slow_sync = 0
+let g:vim_markdown_no_extensions_in_markdown = 1		"No need for .md extension in links [vim-command]
