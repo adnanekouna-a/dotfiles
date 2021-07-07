@@ -13,19 +13,20 @@
 #?
 #?  Last Updated : 06/07/2021
 
-#	Imports functions from 
+#	Imports functions from '.bash_functions' 
 if [ -f "${HOME}/.bash_functions" ]; then
   source "${HOME}/.bash_functions"
 fi
-
-#	Checks if the interactive flag is set.
-[[ $- != *i* ]] && return	
 
 
 #	Uses .bash_aliases for aliases.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+
+#	Checks if the interactive flag is set.
+[[ $- != *i* ]] && return	
 
 
 #	Auto-completion functions.
