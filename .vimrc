@@ -40,7 +40,9 @@ au BufNewFile,BufRead *.py
 
 "Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'connorholyday/vim-snazzy'							"Color Scheme
+Plug 'dracula/vim', { 'as': 'dracula' }					"Color Scheme #Dracula
+Plug 'arcticicestudio/nord-vim'							"Color Scheme #Nord
+Plug 'connorholyday/vim-snazzy'							"Color Scheme #Snazzy
 Plug 'itchyny/lightline.vim'							"Lightline
 Plug 'davidhalter/jedi-vim'								"Auto-Complete
 Plug 'ap/vim-css-color'									"CSS colors display
@@ -55,12 +57,16 @@ Plug 'jbgutierrez/vim-better-comments'					"Better comments
 Plug 'vim-python/python-syntax'							"Python Syntax Highlighting
 call plug#end()
 
+" Fixing the colorscheme
+let g:dracula_colorterm = 0
+let g:dracula_italic = 0
+
 "Color scheme
-colorscheme snazzy
+colorscheme dracula
 
 "Plugins Config
 let g:lightline = {}
-let g:lightline.colorscheme = 'snazzy'
+let g:lightline.colorscheme = 'dracula'
 let g:indentLine_setColors = 0
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors	= 0
