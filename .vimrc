@@ -34,6 +34,7 @@ set splitright											"Shows the new file in the right of the screen"
 set splitbelow											"Shows the new file below the current one"
 set foldmethod=indent									"Enable code folding
 set foldlevel=99
+set spell spelllang=en_us								"Enable spell-checking
 
 "Split Navigations
 nnoremap <C-J> <C-W><C-J>
