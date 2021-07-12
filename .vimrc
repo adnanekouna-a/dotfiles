@@ -48,7 +48,6 @@ au BufNewFile,BufRead *.py
 	\ set tabstop=4 |
 	\ set softtabstop=4 |
 	\ set shiftwidth=4 |
-	\ set textwidth=79 |
 	\ set expandtab |
 	\ set autoindent |
 	\ set fileformat=unix |
@@ -66,6 +65,7 @@ Plug 'tpope/vim-fugitive'								"Git integration
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
 Plug 'vim-python/python-syntax'							"Python Syntax Highlighting
 Plug 'plasticboy/vim-markdown'							"Markdown Syntax Highlighting
+Plug 'elzr/vim-json'									"JSON Syntax Highlighting
 call plug#end()
 
 " Fixing the colorscheme
