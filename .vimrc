@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 07/07/2021
+"  Last Updated : 14/07/2021
 
 "Basic Settings
 syntax on
@@ -32,16 +32,7 @@ set laststatus=2										"Important for lightline
 set noshowmode											"Important for lightline - Hides the modes
 set splitright											"Shows the new file in the right of the screen"
 set splitbelow											"Shows the new file below the current one"
-set foldmethod=indent									"Enable code folding
-set foldlevel=99
-
-"Split Navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-"Enable folding with the spacebar
-nnoremap <space> za
+set updatetime=100
 
 "Python config
 au BufNewFile,BufRead *.py
@@ -56,30 +47,87 @@ au BufNewFile,BufRead *.py
 call plug#begin('~/.vim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }					"Color Scheme #Dracula
 Plug 'itchyny/lightline.vim'							"Lightline
-Plug 'davidhalter/jedi-vim'								"Auto-Complete
-Plug 'ap/vim-css-color'									"CSS colors display
+Plug 'mhinz/vim-startify'								"Startpage
+Plug 'preservim/nerdtree'								"File tree							
+Plug 'KKPMW/vim-sendtowindow'							"Sends text to another window
 Plug 'vim-syntastic/syntastic'							"Syntax highlighting
-Plug 'nvie/vim-flake8'									"PEP8 checking
-Plug 'preservim/nerdtree'								"File tree
-Plug 'tpope/vim-fugitive'								"Git integration
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
-Plug 'vim-python/python-syntax'							"Python Syntax Highlighting
-Plug 'plasticboy/vim-markdown'							"Markdown Syntax Highlighting
-Plug 'elzr/vim-json'									"JSON Syntax Highlighting
+Plug 'tpope/vim-surround'								"Change surrounding characters
+Plug 'tpope/vim-fugitive'								"Git integration
+Plug 'airblade/vim-gitgutter'							"Git status (line by line)
+Plug 'davidhalter/jedi-vim'								"Auto-Complete
+Plug 'nvie/vim-flake8'									"PEP8 checking
+Plug 'vim-python/python-syntax'							"Python syntax highlighting
+Plug 'fisadev/vim-isort'								"Python imports sorting
+Plug 'tmhedberg/SimpylFold'								"Python code folding
+Plug 'ap/vim-css-color'									"CSS colors display
+Plug 'plasticboy/vim-markdown'							"Markdown syntax highlighting
+Plug 'elzr/vim-json'									"JSON syntax highlighting
+"Needs to be always loaded last
+Plug 'ryanoasis/vim-devicons'							"Icons for filetypes and folders in NERDTree
 call plug#end()
 
-" Fixing the colorscheme
+"KEYBINDINGS
+"Split Navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+"Windows Resizing
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize -3<CR>
+noremap <silent> <C-Down> :resize +3<CR>
+"Change Split
+map <Leader>th <C-w>t<C-w>H			
+map <Leader>tk <C-w>t<C-w>K			
+"Python Keybindings
+autocmd Filetype python nnoremap <buffer> <F9> :w<CR>:ter python3 "%"<CR>
+"NERDtree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-t> :NERDTree<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+"CONFIG
+"Fixing the colorscheme
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0
-
 "Color scheme
 colorscheme dracula
-
-"Plugins Config
-let g:lightline = {}
-let g:lightline.colorscheme = 'dracula'
+"Lightline config
+let g:lightline = {
+      \ 'colorscheme': 'dracula',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+"NERDtree config
+"runs NERDTree only if a file is specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() > 0 | NERDTree | wincmd p | endif
+"Closes NERDTree if it's the only window open
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif		
+"Startify config
+"Basic Layout
+let g:startify_lists = [
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'files',     'header': ['   Recent']            },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
+"Enable webdevicons in Startify 
+let g:webdevicons_enable_startify = 1
+"Python config
 let g:indentLine_setColors = 0
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors	= 0
 let g:python_slow_sync = 0
+"vim-markdown config
 let g:vim_markdown_no_extensions_in_markdown = 1		"No need for .md extension in links [vim-command]
+"SimpylFold config
+let g:SimpylFold_docstring_preview = 1					"Previews docstring from a folded function
+let g:SimpylFold_fold_import = 0						"Doesn't fold imports

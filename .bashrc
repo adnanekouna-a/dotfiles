@@ -11,7 +11,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#	Last Updated : 07/07/2021
+#	Last Updated : 14/07/2021
 
 #	Imports functions from '.bash_functions' 
 if [ -f "${HOME}/.bash_functions" ]; then
@@ -97,3 +97,7 @@ shopt -s expand_aliases
 shopt -s histappend			#History appending instead of overwriting.
 shopt -s no_empty_cmd_completion	#Prevents autocompletion when nothing is entered.
 shopt -s nocaseglob			#Matches filenames in a case-insensitive way.
+
+
+# Initial Commands
+figlet Yo!
