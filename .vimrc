@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 14/07/2021
+"  Last Updated : 15/07/2021
 
 "Basic Settings
 syntax on
@@ -33,6 +33,7 @@ set noshowmode											"Important for lightline - Hides the modes
 set splitright											"Shows the new file in the right of the screen"
 set splitbelow											"Shows the new file below the current one"
 set updatetime=100
+set termwinsize=7x0										"Sets the size of the terminal to 7 rows.
 
 "Python config
 au BufNewFile,BufRead *.py
@@ -59,7 +60,6 @@ Plug 'davidhalter/jedi-vim'								"Auto-Complete
 Plug 'nvie/vim-flake8'									"PEP8 checking
 Plug 'vim-python/python-syntax'							"Python syntax highlighting
 Plug 'fisadev/vim-isort'								"Python imports sorting
-Plug 'tmhedberg/SimpylFold'								"Python code folding
 Plug 'ap/vim-css-color'									"CSS colors display
 Plug 'plasticboy/vim-markdown'							"Markdown syntax highlighting
 Plug 'elzr/vim-json'									"JSON syntax highlighting
@@ -88,6 +88,8 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+"Terminal
+nnoremap <leader>tr :ter<CR>
 
 "CONFIG
 "Fixing the colorscheme
@@ -128,6 +130,3 @@ let g:python_highlight_space_errors	= 0
 let g:python_slow_sync = 0
 "vim-markdown config
 let g:vim_markdown_no_extensions_in_markdown = 1		"No need for .md extension in links [vim-command]
-"SimpylFold config
-let g:SimpylFold_docstring_preview = 1					"Previews docstring from a folded function
-let g:SimpylFold_fold_import = 0						"Doesn't fold imports
