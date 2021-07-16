@@ -34,7 +34,7 @@ set splitright											"Shows the new file in the right of the screen"
 set splitbelow											"Shows the new file below the current one"
 set updatetime=100
 set termwinsize=7x0										"Sets the size of the terminal to 7 rows.
-
+set nofoldenable
 "Python config
 au BufNewFile,BufRead *.py
 	\ set tabstop=4 |
