@@ -1,3 +1,4 @@
+#!/bin/bash
 #	            _                            _     
 #	           | |                          ( )    
 #	  __ _   __| | _ __    __ _  _ __    ___|/ ___ 
@@ -11,7 +12,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#  Last Updated : 06/07/2021
+#  Last Updated : 22/07/2021
 
 # Confirmation requirement
 alias cp="cp -i"						# Requires confirmation before overwriting a file.
@@ -33,5 +34,3 @@ alias free="free -m"					# Shows sizes in MB.
 
 alias np="nano -w PKGBUILD"				# Opens the "PKGBUILD" in Nano.
 alias more=less							      # Combines more and less
-
-

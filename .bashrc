@@ -1,3 +1,4 @@
+#!/bin/bash
 #	            _                            _     
 #	           | |                          ( )    
 #	  __ _   __| | _ __    __ _  _ __    ___|/ ___ 
@@ -11,7 +12,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#	Last Updated : 14/07/2021
+#	Last Updated : 22/07/2021
 
 #	Imports functions from '.bash_functions' 
 if [ -f "${HOME}/.bash_functions" ]; then
@@ -22,6 +23,11 @@ fi
 #	Uses .bash_aliases for aliases.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+#	Uses .bash_paliases for python aliases.
+if [ -f ~/.bash_paliases ]; then
+	. ~/.bash_paliases
 fi
 
 
