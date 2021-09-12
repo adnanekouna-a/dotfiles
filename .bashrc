@@ -12,7 +12,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#	Last Updated : 22/07/2021
+#	Last Updated : 12/09/2021
 
 #	Imports functions from '.bash_functions' 
 if [ -f "${HOME}/.bash_functions" ]; then
@@ -34,6 +34,8 @@ fi
 #	Checks if the interactive flag is set.
 [[ $- != *i* ]] && return	
 
+#	Defaults
+export EDITOR=vim
 
 #	Auto-completion functions.
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion	
