@@ -36,6 +36,7 @@ fi
 
 #	Defaults
 export EDITOR=vim
+export VISUAL=vim
 
 #	Auto-completion functions.
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion	
