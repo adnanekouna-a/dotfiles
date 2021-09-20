@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 15/07/2021
+"  Last Updated : 20/09/2021
 
 "Basic Settings
 syntax on
@@ -51,18 +51,18 @@ Plug 'itchyny/lightline.vim'							"Lightline
 Plug 'mhinz/vim-startify'								"Startpage
 Plug 'preservim/nerdtree'								"File tree							
 Plug 'KKPMW/vim-sendtowindow'							"Sends text to another window
-Plug 'vim-syntastic/syntastic'							"Syntax highlighting
+Plug 'vim-syntastic/syntastic'							"Syntax Checking 
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
 Plug 'tpope/vim-surround'								"Change surrounding characters
 Plug 'tpope/vim-fugitive'								"Git integration
 Plug 'airblade/vim-gitgutter'							"Git status (line by line)
 Plug 'davidhalter/jedi-vim'								"Auto-Complete
-Plug 'nvie/vim-flake8'									"PEP8 checking
 Plug 'vim-python/python-syntax'							"Python syntax highlighting
 Plug 'fisadev/vim-isort'								"Python imports sorting
 Plug 'ap/vim-css-color'									"CSS colors display
 Plug 'plasticboy/vim-markdown'							"Markdown syntax highlighting
 Plug 'elzr/vim-json'									"JSON syntax highlighting
+Plug 'mattn/emmet-vim'									"Emmet in Vim
 "Needs to be always loaded last
 Plug 'ryanoasis/vim-devicons'							"Icons for filetypes and folders in NERDTree
 call plug#end()
@@ -130,3 +130,10 @@ let g:python_highlight_space_errors	= 0
 let g:python_slow_sync = 0
 "vim-markdown config
 let g:vim_markdown_no_extensions_in_markdown = 1		"No need for .md extension in links [vim-command]
+"emmet-vim config
+let g:user_emmet_install_global = 0			
+autocmd FileType html,css EmmetInstall			"Works only with CSS and HTML
+"syntastic config
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_pylint_args = '--rcfile=/home/adnanekouna-a/.pylintrc'
