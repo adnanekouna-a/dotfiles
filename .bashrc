@@ -12,7 +12,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#	Last Updated : 12/09/2021
+#	Last Updated : 22/09/2021
 
 #	Imports functions from '.bash_functions' 
 if [ -f "${HOME}/.bash_functions" ]; then
@@ -53,7 +53,8 @@ case ${TERM} in
 esac
 
 
-#	?	Terminal-specific color customizations (unchanged, by default in Manjaro)
+# Terminal-specific color customizations (unchanged, by default in Manjaro)
+
 use_color=true
 # Set colorful PS1 only on colorful terminals.
 # dircolors --print-database uses its own built-in database
@@ -110,3 +111,4 @@ shopt -s nocaseglob			#Matches filenames in a case-insensitive way.
 
 # Initial Commands
 figlet Yo!
+task list

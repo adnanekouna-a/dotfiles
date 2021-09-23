@@ -13,9 +13,9 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#  Last Updated : 22/07/2021
+#  Last Updated : 22/09/2021
 
 # Opens Mimix 1.0
-alias mimix="python3 ~/Documents/Coding/Python/Projects/Micro\ Projects/Mimix\ 1.0/mimix.py"			
+alias mimix="python3 /home/adnanekouna-a/Documents/Coding/Python/Projects/In-Use/Mimix/mimix.py"			
 # Opens Base64 encoder-decoder
-alias b64="python3 ~/Documents/Coding/Python/Projects/Micro\ Projects/Base64\ Encoder-Decoder/base64-converter.py"	
+alias b64="python3 /home/adnanekouna-a/Documents/Coding/Python/Projects/In-Use/B64/main.py"	
