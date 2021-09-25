@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 20/09/2021
+"  Last Updated : 25/09/2021
 
 "Basic Settings
 syntax on
@@ -52,6 +52,7 @@ Plug 'mhinz/vim-startify'								"Startpage
 Plug 'preservim/nerdtree'								"File tree							
 Plug 'KKPMW/vim-sendtowindow'							"Sends text to another window
 Plug 'vim-syntastic/syntastic'							"Syntax Checking 
+Plug 'dbeniamine/cheat.sh-vim'							"cheat.sh Integration
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
 Plug 'tpope/vim-surround'								"Change surrounding characters
 Plug 'tpope/vim-fugitive'								"Git integration
