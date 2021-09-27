@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 25/09/2021
+"  Last Updated : 27/09/2021
 
 "Basic Settings
 syntax on
@@ -138,3 +138,5 @@ autocmd FileType html,css EmmetInstall			"Works only with CSS and HTML
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_python_pylint_args = '--rcfile=/home/adnanekouna-a/.pylintrc'
+"jedi-vim config
+let g:jedi#documentation_command = "k"
