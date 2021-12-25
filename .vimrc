@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 27/09/2021
+"  Last Updated : 25/12/2021
 
 "Basic Settings
 syntax on
@@ -55,6 +55,7 @@ Plug 'vim-syntastic/syntastic'							"Syntax Checking
 Plug 'dbeniamine/cheat.sh-vim'							"cheat.sh Integration
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }		"fzf Integration
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
+Plug 'tpope/vim-commentary'								"Commenting shortcuts
 Plug 'tpope/vim-surround'								"Change surrounding characters
 Plug 'tpope/vim-fugitive'								"Git integration
 Plug 'airblade/vim-gitgutter'							"Git status (line by line)
