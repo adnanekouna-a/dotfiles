@@ -53,6 +53,7 @@ Plug 'preservim/nerdtree'								"File tree
 Plug 'KKPMW/vim-sendtowindow'							"Sends text to another window
 Plug 'vim-syntastic/syntastic'							"Syntax Checking 
 Plug 'dbeniamine/cheat.sh-vim'							"cheat.sh Integration
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }		"fzf Integration
 Plug 'jbgutierrez/vim-better-comments'					"Better comments
 Plug 'tpope/vim-surround'								"Change surrounding characters
 Plug 'tpope/vim-fugitive'								"Git integration

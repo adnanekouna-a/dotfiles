@@ -34,6 +34,8 @@ fi
 #	Checks if the interactive flag is set.
 [[ $- != *i* ]] && return	
 
+#	Activates fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 #	Auto-completion functions.
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion	
