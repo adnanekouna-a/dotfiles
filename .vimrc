@@ -59,9 +59,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }	"Color Scheme #Dracula
 Plug 'mhinz/vim-startify'	"Startpage
 Plug 'itchyny/lightline.vim'	"Lightline
-Plug 'preservim/nerdtree'	"File tree							
-Plug 'jbgutierrez/vim-better-comments'	"Better comments
+Plug 'preservim/nerdtree'	"File tree	
 Plug 'Yggdroot/indentLine'	"Indentations lines
+Plug 'sheerun/vim-polyglot'	"Syntax Highlighting for more than 100 languages.
 
 "" Utilities
 Plug 'vim-syntastic/syntastic'	"Syntax Checking 
@@ -76,7 +76,6 @@ Plug 'tpope/vim-surround'	"Change surrounding characters
 "" Language-specific plugins
 " Python
 Plug 'davidhalter/jedi-vim'	"Auto-Complete
-Plug 'vim-python/python-syntax'	"Python syntax highlighting
 Plug 'fisadev/vim-isort'	"Python imports sorting
 " HTML & CSS & JavaScript
 Plug 'ap/vim-css-color'	"CSS colors display
@@ -84,6 +83,7 @@ Plug 'mattn/emmet-vim'	"Emmet in Vim
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'vim-scripts/HTML-AutoCloseTag'  "Auto-close HTML Tags
 
 " Others
 Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
@@ -156,7 +156,6 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 
 "" indentLine
 let g:indentLine_setColors = 0	"IndentLines respect the colorscheme
-"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 "" syntastic
 let g:syntastic_check_on_wq = 0
