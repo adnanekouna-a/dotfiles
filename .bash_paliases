@@ -13,11 +13,11 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#  Last Updated : 22/09/2021
+#  Last Updated : 30/01/2022
 
 # Opens Mimix 1.0
 alias mimix="python3 /home/adnanekouna-a/Documents/Coding/Python/Projects/In-Use/Mimix/mimix.py"			
 # Opens Base64 encoder-decoder
 alias b64="python3 /home/adnanekouna-a/Documents/Coding/Python/Projects/In-Use/B64/main.py"	
 # Opens BAT Price Notifier
-alias BPN="python3 /home/adnanekouna-a/Documents/Coding/Python/Projects/In-Use/BAT-Price-Notifier/main.py"
+alias BAT="python3 /home/adnanekouna-a/Documents/Coding/Python/Projects/In-Use/BAT-Price-Notifier/main.py"
