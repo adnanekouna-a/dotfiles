@@ -12,7 +12,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#	Last Updated : 25/09/2021
+#	Last Updated : 02/03/2022
 
 #	Imports functions from '.bash_functions' 
 if [ -f "${HOME}/.bash_functions" ]; then
@@ -28,6 +28,12 @@ fi
 #	Uses .bash_paliases for python aliases.
 if [ -f ~/.bash_paliases ]; then
 	. ~/.bash_paliases
+fi
+
+
+#	Uses .bash_profile for default values.
+if [ -f ~/.bash_profile ]; then
+	. ~/.bash_profile
 fi
 
 
