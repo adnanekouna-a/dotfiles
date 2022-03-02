@@ -19,7 +19,6 @@ if [ -f "${HOME}/.bash_functions" ]; then
   source "${HOME}/.bash_functions"
 fi
 
-
 #	Uses .bash_aliases for aliases.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -30,12 +29,8 @@ if [ -f ~/.bash_paliases ]; then
 	. ~/.bash_paliases
 fi
 
-
-#	Uses .bash_profile for default values.
-if [ -f ~/.bash_profile ]; then
-	. ~/.bash_profile
-fi
-
+# Add flutter to PATH
+export PATH="$PATH:~/flutter/bin"
 
 #	Checks if the interactive flag is set.
 [[ $- != *i* ]] && return	
