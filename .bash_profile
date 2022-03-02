@@ -12,10 +12,12 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#	Last Updated : 25/09/2021
+#	Last Updated : 02/03/2022
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # Environment Variables
 export EDITOR=vim
 export VISUAL=vim
+export PATH="$PATH:~/flutter/bin"
+
