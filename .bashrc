@@ -29,9 +29,6 @@ if [ -f ~/.bash_paliases ]; then
 	. ~/.bash_paliases
 fi
 
-# Add flutter to PATH
-export PATH="$PATH:~/flutter/bin"
-
 #	Checks if the interactive flag is set.
 [[ $- != *i* ]] && return	
 
