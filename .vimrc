@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 26/12/2021
+"  Last Updated : 23/03/2022
 
 
 """ SETTINGS
@@ -21,6 +21,7 @@ set nocompatible
 set softtabstop=4 tabstop=4	"Makes the tab equivalent to 4 spaces
 set shiftwidth=4
 filetype indent on
+filetype plugin on
 set smartindent	"Enables indentation in code blocks
 set number	"Enables the line numbers						
 set nobackup											
@@ -72,6 +73,7 @@ Plug 'tpope/vim-fugitive'	"Git integration
 Plug 'KKPMW/vim-sendtowindow'	"Sends text to another window
 Plug 'tpope/vim-commentary'	"Commenting shortcuts
 Plug 'tpope/vim-surround'	"Change surrounding characters
+Plug 'vimwiki/vimwiki'  "Personal Wiki
 
 "" Language-specific plugins
 " Python
@@ -84,10 +86,6 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 Plug 'vim-scripts/HTML-AutoCloseTag'  "Auto-close HTML Tags
-
-" Others
-Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
-Plug 'elzr/vim-json'	"JSON syntax highlighting
 
 "" Needs to be always loaded last
 Plug 'ryanoasis/vim-devicons'	"Icons for filetypes and folders in NERDTree
