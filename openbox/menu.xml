@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--adnanekouna-a/dotfiles -->
+
+<!-- Openbox Menu -->
+<!-- Last Updated : 17/04/2022 -->
+
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+        <menu id="1" label="Web">
+            <menu id="2" label="Browsers">
+                <item label="Brave"> <action name="Execute">
+                    <execute>brave</execute>
+                </action> </item>
+                <item label="FireFox"> <action name="Execute">
+                    <execute>firefox</execute>
+                </action> </item>
+            </menu>
+            <menu id="3" label="Communication">
+                <item label="Discord"> <action name="Execute">
+                    <execute>discord</execute>
+                </action> </item>
+                <item label="Mailspring"> <action name="Execute">
+                    <execute>mailspring</execute>
+                </action> </item>
+                <item label="Telegram Desktop"> <action name="Execute">
+                    <execute>telegram-desktop</execute>
+                </action> </item>
+            </menu>
+            <item label="Hyperbeam"> <action name="Execute">
+                <execute>hyperbeam</execute>
+            </action> </item>
+            <item label="Spotify"> <action name="Execute">
+                <execute>spotify</execute>
+            </action> </item>
+        </menu>
+        <menu id="4" label="Development">
+            <item label="OpenJDK Java 17 Console"> <action name="Execute">
+                <execute>jconsole</execute>
+            </action> </item>
+            <item label="OpenJDK Java 17 Shell"> <action name="Execute">
+                <execute>konsole -e jshell</execute>
+            </action> </item>
+            <item label="Oracle VM VirtualBox"> <action name="Execute">
+                <execute>VirtualBox</execute>
+            </action> </item>
+            <item label="Python"> <action name="Execute">
+                <execute>konsole -e python</execute>
+            </action> </item>
+            <item label="Python (v2.7)"> <action name="Execute">
+                <execute>konsole -e python2.7</execute>
+            </action> </item>
+            <item label="Qt Designer"> <action name="Execute">
+                <execute>designer</execute>
+            </action> </item>
+            <item label="VirtualBox"> <action name="Execute">
+                <execute>virtualbox</execute>
+            </action> </item>
+        </menu>
+        <menu id="5" label="Editors">
+            <item label="Kate"> <action name="Execute">
+                <execute>kate</execute>
+            </action> </item>
+            <item label="Vim"> <action name="Execute">
+                <execute>konsole -e vim</execute>
+            </action> </item>
+            <item label="Visual Studio Code"> <action name="Execute">
+                <execute>code --no-sandbox</execute>
+            </action> </item>
+        </menu>
+        <menu id="6" label="Games">
+            <item label="2048"> <action name="execute">
+                <execute>konsole -e 2048</execute>
+            </action> </item>
+            <item label="gnuchess"> <action name="execute">
+                <execute>konsole -e gnuchess</execute>
+            </action> </item>
+            <item label="Knights"> <action name="Execute">
+                <execute>knights</execute>
+            </action> </item>
+            <item label="MultiMC5"> <action name="Execute">
+                <execute>multimc</execute>
+            </action> </item>
+            <item label="RetroArch"> <action name="Execute">
+                <execute>retroarch</execute>
+            </action> </item>
+        </menu>
+        <menu id="7" label="Graphics">
+            <item label="GIMP"> <action name="Execute">
+                <execute>gimp-2.10</execute>
+            </action> </item>
+            <item label="Gwenview"> <action name="Execute">
+                <execute>gwenview</execute>
+            </action> </item>
+            <item label="LibreSprite"> <action name="Execute">
+                <execute>/home/adnanekouna-a/Applications/libresprite_7145e7aa49c6c09e18af14c86341a125</execute>
+            </action> </item>
+        </menu>
+        <menu id="8" label="Multimedia">
+            <item label="cmus"> <action name="Execute">
+                <execute>konsole -e cmus</execute>
+            </action> </item>
+            <item label="Kdenlive"> <action name="Execute">
+                <execute>kdenlive</execute>
+            </action> </item>
+            <item label="mpv Media Player"> <action name="Execute">
+                <execute>mpv --player-operation-mode=pseudo-gui</execute>
+            </action> </item>
+            <item label="OBS Studio"> <action name="Execute">
+                <execute>obs</execute>
+            </action> </item>
+            <item label="VLC media player"> <action name="Execute">
+                <execute>vlc</execute>
+            </action> </item>
+        </menu>
+        <menu id="9" label="Office">
+            <item label="Calibre"> <action name="Execute">
+                <execute>calibre</execute>
+            </action> </item>
+            <item label="FreeOffice PlanMaker"> <action name="Execute">
+                <execute>freeoffice-planmaker</execute>
+            </action> </item>
+            <item label="FreeOffice Presentations"> <action name="Execute">
+                <execute>freeoffice-presentations</execute>
+            </action> </item>
+            <item label="FreeOffice TextMaker"> <action name="Execute">
+                <execute>freeoffice-textmaker</execute>
+            </action> </item>
+            <item label="KOrganizer"> <action name="Execute">
+                <execute>korganizer</execute>
+            </action> </item>
+            <item label="Okular"> <action name="Execute">
+                <execute>okular</execute>
+            </action> </item>
+            <item label="Qalculate!"> <action name="Execute">
+                <execute>qalculate-gtk</execute>
+            </action> </item>
+        </menu>
+        <menu id="10" label="Settings">
+            <menu id="11" label="Appearance">
+                <item label="Kvantum Manager"> <action name="Execute">
+                    <execute>kvantummanager</execute>
+                </action> </item>
+                <item label="lxappearance"> <action name="Execute">
+                    <execute>lxappearance</execute>
+                </action> </item>
+                <item label="nitrogen"> <action name="Execute">
+                    <execute>nitrogen</execute>
+                </action> </item>
+            </menu>
+            <menu id="12" label="Devices &#38; Printers">
+                <item label="HP Device Manager"> <action name="Execute">
+                    <execute>hp-toolbox</execute>
+                </action> </item>
+                <item label="Printers Settings"> <action name="Execute">
+                    <execute>system-config-printer</execute>
+                </action> </item>
+            </menu>
+            <menu id="13" label="Openbox Settings">
+                <item label="Keyboard Shortcuts"> <action name="Execute">
+                    <execute>obkey</execute>
+                </action> </item>
+                <item label="Settings"> <action name="Execute">
+                    <execute>obconf</execute>
+                </action> </item>
+                <item label="Themes"> <action name="Execute">
+                    <execute>obtheme</execute>
+                </action></item>
+            </menu>
+            <item label="KDE Partition Manager"> <action name="Execute">
+                <execute>partitionmanager</execute>
+            </action> </item>
+            <item label="Manjaro Settings Manager"> <action name="Execute">
+                <execute>manjaro-settings-manager</execute>
+            </action> </item>
+            <item label="Panel Settings"> <action name="Execute">
+                <execute>tint2conf</execute>
+            </action> </item>
+            <item label="TILP"> <action name="Execute">
+                <execute>tilp</execute>
+            </action> </item>
+        </menu>
+        <menu id="14" label="Utilities">
+            <menu id="15" label="Backup &#38; Restore">
+                <item label="Timeshift"> <action name="Execute">
+                    <execute>timeshift-launcher</execute>
+                </action> </item>
+                <item label="VGrive"> <action name="Execute">
+                    <execute>com.github.bcedu.vgrive</execute>
+                </action> </item>
+            </menu>
+            <menu id="16" label="Download Managers">
+                <item label="KGet"> <action name="Execute">
+                    <execute>kget</execute>
+                </action> </item>
+                <item label="Transmission"> <action name="Execute">
+                    <execute>transmission-qt</execute>
+                </action> </item>
+            </menu>
+            <menu id="17" label="File Managers">
+                <item label="Dolphin"> <action name="Execute">
+                    <execute>dolphin</execute>
+                </action> </item>
+                <item label="Vifm"> <action name="Execute">
+                    <execute>konsole -e vifm</execute>
+                </action> </item>
+            </menu>
+            <menu id="18" label="Password Managers">
+                <item label="KeePassXC"> <action name="Execute">
+                    <execute>keepassxc</execute>
+                </action> </item>
+                <item label="Seahorse"> <action name="Execute">
+                    <execute>seahorse</execute>
+                </action> </item>
+            </menu>
+            <menu id="19" label="System Monitoring">
+                <item label="Htop"> <action name="Execute">
+                    <execute>konsole -e htop</execute>
+                </action> </item>
+                <item label="KSysGuard"> <action name="Execute">
+                    <execute>ksysguard</execute>
+                </action> </item>
+            </menu>
+            <item label="Ark"> <action name="Execute">
+                <execute>ark</execute>
+            </action> </item>
+            <item label="EasyTag"> <action name="Execute">
+                <execute>easytag</execute>
+            </action> </item>
+            <item label="Emoji Selector"> <action name="Execute">
+                <execute>ibus-ui-emojier-plasma</execute>
+            </action> </item>
+            <item label="Filelight"> <action name="Execute">
+                <execute>filelight</execute>
+            </action> </item>
+            <item label="Spectacle"> <action name="Execute">
+                <execute>spectacle</execute>
+            </action> </item>
+        </menu>
+        <menu id="20" label="Terminals">
+            <item label="Konsole"> <action name="Execute">
+                <execute>konsole</execute>
+            </action> </item>
+            <item label="UXTerm"> <action name="Execute">
+                <execute>uxterm</execute>
+            </action> </item>
+            <item label="Xterm"> <action name="Execute">
+                <execute>xterm</execute>
+            </action> </item>
+        </menu>
+        <separator/>
+        <menu id="21" label="OpenBox">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+            <separator/>
+            <menu id="exit-menu" label="Exit">
+            	<item label="Log Out">
+            		<action name="Execute">
+            			<command>openbox --exit</command>
+            		</action>
+            	</item>
+            	<item label="Shutdown">
+            		<action name="Execute">
+            			<command>systemctl poweroff</command>
+            		</action>
+            	</item>
+            	<item label="Restart">
+            		<action name="Execute">
+            		        <command>systemctl reboot</command>
+            		</action>
+            	</item>
+            	<item label="Suspend">
+            		<action name="Execute">
+            		        <command>systemctl suspend</command>
+            		</action>
+            	</item>
+            	<item label="Hibernate">
+            		<action name="Execute">
+            		        <command>systemctl hibernate</command>
+            		</action>
+            	</item>
+            </menu>
+        </menu>    
+    </menu>
+</openbox_menu>
