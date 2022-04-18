@@ -3,7 +3,7 @@
 <!--adnanekouna-a/dotfiles -->
 
 <!-- Openbox Config -->
-<!-- Last Updated : 16/04/2022 -->
+<!-- Last Updated : 18/04/2022 -->
 
 
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -381,6 +381,13 @@
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
         <execute>xbacklight -dec 5</execute>
+      </action>
+    </keybind>
+    <!-- Keyboard Shortcuts for commands -->
+    <keybind key="C-A-n">
+      <!-- Toggle Night Mode -->
+      <action name="Execute">
+        <execute>pkill -USR1 redshift-gtk</execute>
       </action>
     </keybind>
   </keyboard>

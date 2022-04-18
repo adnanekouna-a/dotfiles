@@ -1,7 +1,7 @@
 # adnanekouna-a/dotfiles
 #
 # Openbox Startup Commands
-# Last Updated : 15/04/2022
+# Last Updated : 18/04/2022
 #
 #
 # These things are run when an Openbox X Session is started.
@@ -9,3 +9,5 @@
 picom -b &
 nitrogen --restore &
 tint2 &
+nm-applet --no-agent &
+redshift-gtk & 
