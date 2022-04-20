@@ -3,7 +3,7 @@
 <!--adnanekouna-a/dotfiles -->
 
 <!-- Openbox Config -->
-<!-- Last Updated : 18/04/2022 -->
+<!-- Last Updated : 20/04/2022 -->
 
 
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -330,15 +330,6 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
-      </action>
-    </keybind>
     <keybind key="W-t">
       <action name="Execute">
         <command>konsole</command>
@@ -351,7 +342,22 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>konsole -e 'cmus'</command>
+        <command>mailspring</command>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>spotify</command>
+      </action>
+    </keybind>
+    <keybind key="W-k">
+      <action name="Execute">
+        <command>telegram-desktop</command>
+      </action>
+    </keybind>
+    <keybind key="W-v">
+      <action name="Execute">
+        <command>code</command>
       </action>
     </keybind>
     <!-- Keybindings for system actions -->
