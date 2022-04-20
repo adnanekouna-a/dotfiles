@@ -10,5 +10,5 @@ picom -b &
 nitrogen --restore &
 (sleep 1s && tint2) &
 (sleep 2s && nm-applet --indicator) &
+(sleep 2s && volwheel) &
 (sleep 2s && redshift-gtk) & 
-(sleep 2s && volumeicone) &
