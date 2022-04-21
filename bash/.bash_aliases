@@ -12,7 +12,7 @@
 #	| (_| || (_) || |_ | |  | || ||  __/\__ \
 #	 \__,_| \___/  \__||_|  |_||_| \___||___/
 #
-#  Last Updated : 22/07/2021
+#  Last Updated : 21/04/2022
 
 # Confirmation requirement
 alias cp="cp -i"						# Requires confirmation before overwriting a file.
@@ -21,9 +21,10 @@ alias mv="mv -i"						# Requires confirmation before moving a file.
 
 # Frequently used shortcuts
 alias ..="cd .."
+alias ls="exa"
 alias ll="ls -lv --group-directories-first"	      # Directories first + alphanumeric sorting.
-alias lr="ll -R"							                    # Recursive ls.
-alias la="ll -A"							                    # Shows hidden files.
+alias lr="ls -R"							                    # Recursive ls.
+alias la="exa -la"							                    # Shows hidden files.
 alias mkdir="mkdir -p"											# Create parent directory first, if it doesn't exist. 
 
 # Disk managing readability
