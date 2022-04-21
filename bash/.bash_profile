@@ -1,4 +1,4 @@
-~/.bash_profile
+#~/.bash_profile
 #	            _                            _     
 #	           | |                          ( )    
 #	  __ _   __| | _ __    __ _  _ __    ___|/ ___ 
@@ -19,3 +19,4 @@
 # Environment Variables
 export EDITOR=vim
 export VISUAL=vim
+export PAGER=most

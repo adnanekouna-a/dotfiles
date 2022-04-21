@@ -16,7 +16,6 @@
 
 """ SETTINGS
 "" Vim Settings
-syntax on
 set nocompatible
 set softtabstop=4 tabstop=4	"Makes the tab equivalent to 4 spaces
 set shiftwidth=4
@@ -38,6 +37,7 @@ set splitbelow	"Shows the new file below the current one"
 set updatetime=100
 set termwinsize=7x0	"Sets the size of the terminal to 7 rows.
 set nofoldenable
+syntax on
 
 "" Language-specific Settings
 " Python
