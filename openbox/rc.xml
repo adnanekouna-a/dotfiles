@@ -395,16 +395,28 @@
       </action>
     </keybind>
     <!-- Keyboard Shortcuts for commands -->
-    <keybind key="C-A-n">
+    <keybind key="C-S-n">
       <!-- Toggle Night Mode -->
       <action name="Execute">
         <execute>pkill -USR1 redshift-gtk</execute>
       </action>
     </keybind>
-    <keybind key="C-A-w">
+    <keybind key="C-S-w">
       <!-- Toggle Night Mode -->
       <action name="Execute">
         <execute>sh ~/.scripts/toggle_wifi.sh</execute>
+      </action>
+    </keybind>
+    <keybind key="C-S-h">
+      <!-- Shows the latest notification on dunst -->
+      <action name="Execute">
+        <execute>dunstctl history-pop</execute>
+      </action>
+    </keybind>
+    <keybind key="C-S-x">
+      <!-- Hides all the notificatiom -->
+      <action name="Execute">
+        <execute>dunstctl close-all</execute>
       </action>
     </keybind>
   </keyboard>

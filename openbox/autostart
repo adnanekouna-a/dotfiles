@@ -13,4 +13,5 @@ nitrogen --restore &
 (sleep 2s && nm-applet --indicator) &
 (sleep 2s && pnmixer) &
 (sleep 2s && mictray) &
+(sleep 2s && cbatticon --command-critical-level "sh .scripts/critical_battery_alert.sh" --command-left-click "sh .scripts/battery_notification.sh") &
 (sleep 2s && redshift-gtk) & 

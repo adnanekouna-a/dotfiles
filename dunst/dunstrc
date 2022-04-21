@@ -37,7 +37,7 @@
     origin = bottom-right
 
     # Offset from the origin
-    offset = 13x50
+    offset = 15x50
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -218,7 +218,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/xdg-open
+    browser = /usr/bin/brave
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
