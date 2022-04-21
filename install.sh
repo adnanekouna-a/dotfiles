@@ -12,3 +12,5 @@ cp -f ~/Dotfiles/bash/* ~/
 cp -rf ~/Dotfiles/dunst/ ~/.config/
 cp -rf ~/Dotfiles/openbox/ ~/.config/
 cp -rf ~/Dotfiles/redshift/ ~/.config/
+mkdir ~/.scripts/
+cp -f ~/Dotfiles/scripts/* ~/.scripts/
