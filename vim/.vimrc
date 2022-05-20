@@ -11,7 +11,7 @@
 "	| (_| || (_) || |_ | |  | || ||  __/\__ \
 "	 \__,_| \___/  \__||_|  |_||_| \___||___/
 "
-"  Last Updated : 23/03/2022
+"  Last Updated : 21/05/2022
 
 
 """ SETTINGS
@@ -113,6 +113,8 @@ nnoremap <leader>tr :ter<CR>
 "" Language-specific Keybindings
 "Python Keybindings
 autocmd Filetype python nnoremap <buffer> <F9> :w<CR>:ter python3 "%"<CR>
+"JavaScript Keybindings
+autocmd Filetype javascript nnoremap <buffer> <F9> :w<CR>:ter node "%"<CR>
 
 "" Plugins Keybindings
 "NERDtree
